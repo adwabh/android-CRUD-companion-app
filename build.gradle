@@ -1,0 +1,50 @@
+apply from: 'buildsystem/ci.gradle'
+apply from: 'buildsystem/dependencies.gradle'
+
+buildscript {
+  repositories {
+    jcenter()
+    mavenCentral()
+    google()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.0.0'
+    classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
+    classpath 'com.google.gms:google-services:3.2.0'
+  }
+}
+
+allprojects {
+  repositories {
+    maven {
+      url "https://jitpack.io"
+    }
+    maven {
+      url "https://maven.google.com"
+    }
+  }
+  ext {
+    androidApplicationId = 'com.parenting.attendance'
+    androidVersionCode = 1
+    androidVersionName = "1.0"
+    testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+    testApplicationId = 'com.fernandocejas.android10.sample.presentation.test'
+  }
+}
+
+task runDomainUnitTests(dependsOn: [':domain:test']) {
+  description 'Run unit tests for the domain layer.'
+}
+
+task runDataUnitTests(dependsOn: [':data:cleanTestDebugUnitTest', ':data:testDebugUnitTest']) {
+  description 'Run unit tests for the data layer.'
+}
+
+task runUnitTests(dependsOn: ['runDomainUnitTests', 'runDataUnitTests']) {
+  description 'Run unit tests for both domain and data layers.'
+}
+
+task runAcceptanceTests(dependsOn: [':presentation:connectedAndroidTest']) {
+  description 'Run application acceptance tests.'
+}
+
