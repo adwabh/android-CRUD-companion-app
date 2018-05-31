@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/twenty_dp"
+            android:gravity="center_horizontal"
+            android:text="@string/enter_otp"
+            android:textColor="@color/fontPrimaryText"
+            android:textSize="@dimen/font_normal" />
+
+        <com.parenting.attendance.presentation.view.customviews.PinEntryView
+            android:id="@+id/editText_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ten_dp"
+            app:accentType="character"
+            app:digitBackground="@drawable/just_bottom_line"
+            app:digitElevation="0dp"
+            app:digitTextSize="@dimen/font_normal"
+            app:digitSpacing="@dimen/eight_dp"
+            app:mask=""
+            app:numDigits="6"
+            app:pinAccentColor="@color/fontPrimaryText"
+            app:pinInputType="number" />
+
+
+        <TextView
+            android:id="@+id/textView_text_resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:gravity="center"
+            android:text="@string/didnt_receive_otp"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:id="@+id/textView_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/two_dp"
+            android:text="@string/resend_sms"
+            android:textColor="@color/fontPrimaryText"
+            android:textSize="@dimen/font_small" />
+
+        <Button
+            android:id="@+id/button_verify"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/fourty_two_dp"
+            android:layout_marginLeft="@dimen/fourty_two_dp"
+            android:layout_marginRight="@dimen/fourty_two_dp"
+            android:layout_marginStart="@dimen/fourty_two_dp"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:background="@drawable/button_pressed"
+            android:paddingEnd="@dimen/thirty_dp"
+            android:paddingLeft="@dimen/thirty_dp"
+            android:paddingRight="@dimen/thirty_dp"
+            android:paddingStart="@dimen/thirty_dp"
+            android:text="@string/verify"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_large"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

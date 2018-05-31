@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:layout_marginBottom="@dimen/eight_dp"
+    android:layout_marginEnd="@dimen/eight_dp"
+    android:layout_marginLeft="@dimen/eight_dp"
+    android:layout_marginRight="@dimen/eight_dp"
+    android:layout_marginStart="@dimen/eight_dp"
+    android:layout_marginTop="@dimen/eight_dp"
+    android:background="@color/gray_light">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_name_static"
+                    android:layout_width="@dimen/ninty_five_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    android:textColor="@color/fontSecondary"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="Name:"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontPrimaryText"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="Apurva Chakke" />
+
+                <ImageView
+                    android:id="@+id/imageView_more"
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:src="@drawable/ic_action_more"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_contact_static"
+                    android:layout_width="@dimen/ninty_five_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    android:text="@string/contact"
+                    android:textColor="@color/fontSecondary"
+                    android:textSize="@dimen/font_normal"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontPrimaryText"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="9878656408" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_parent_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_parent_name_static"
+                    android:layout_width="@dimen/ninty_five_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/eight_dp"
+                    android:layout_marginRight="@dimen/eight_dp"
+                    android:text="@string/parent_name"
+                    android:textColor="@color/fontSecondary"
+                    android:textSize="@dimen/font_normal"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView_parent_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontPrimaryText"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="Rajendra Chakke" />
+
+            </LinearLayout>
+
+            <include layout="@layout/item_layout_timings" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_detail_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/eight_dp">
+
+                <TextView
+                    android:id="@+id/textView_detail_log"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontPrimaryText"
+                    android:textSize="@dimen/font_normal"
+                    android:text="@string/action_detail_log"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_timings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:visibility="gone"
+        />
+</LinearLayout>
+
+

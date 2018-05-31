@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout_time"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/textView_time_in_static"
+        android:layout_width="@dimen/ninty_five_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/eight_dp"
+        android:layout_marginRight="@dimen/eight_dp"
+        android:text="@string/checkin"
+        android:textColor="@color/fontSecondary"
+        android:textSize="@dimen/font_normal"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/textView_time_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fontPrimaryText"
+        android:textSize="@dimen/font_normal"
+        tools:text="10:00 AM"
+        android:background="@android:color/transparent"/>
+
+    <android.support.v4.widget.Space
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="0dp"/>
+
+    <TextView
+        android:id="@+id/textView_time_out_static"
+        android:layout_width="@dimen/ninty_five_dp"
+        android:layout_height="wrap_content"
+        android:text="@string/checkin"
+        android:textColor="@color/fontSecondary"
+        android:textSize="@dimen/font_normal"
+        android:layout_marginStart="@dimen/eight_dp"
+        android:layout_marginLeft="@dimen/eight_dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/textView_out_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fontPrimaryText"
+        android:textSize="@dimen/font_normal"
+        tools:text="10:00 AM"
+        android:background="@android:color/transparent"/>
+
+</LinearLayout>

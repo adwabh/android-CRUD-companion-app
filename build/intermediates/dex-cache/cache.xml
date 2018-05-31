@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/gson-2.7_7c5f8ddf955c88d776bd7a94c00e47a737f6ab27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.5.0/94c11f915bfe1aeaa5ef6351ddfbe58bae1ea397/logging-interceptor-3.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="94c11f915bfe1aeaa5ef6351ddfbe58bae1ea397">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/logging-interceptor-3.5.0_989c355c48b6f59f7e5cbd3573324263435be09b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_d585ea29ddf03be46e29a147e532eedd887a6fc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_49e67a5d7422644a19598665e855f99849918537.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_b0c035ede20191ea3fd944ff7412e3915cda0c2d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.8/55a1aa1cdcfd06b9950ca856e2bc2790e105146a/dagger-2.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="55a1aa1cdcfd06b9950ca856e2bc2790e105146a">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/dagger-2.8_839a89f20424dd68ca67e4b69d22102ecbabd96b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.haha/haha/1.3/d2c832f9d14a11c79f58a7ee2e10526a12152c72/haha-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d2c832f9d14a11c79f58a7ee2e10526a12152c72">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/haha-1.3_a3b5f8cbfed50d6bab50ec872a23849c77c28313.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/retrofit-2.1.0_b0464ff074089b64ab1d94c88f0ecf00a55f9fc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_8e23c57358e598cd2bb8362d888a3293406381eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_978da95dad53848c52b529945db5dd75c04e9911.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_4f75a93e68ba14f19aef1ec6467368a3258280e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_39fe2e6d7a11e10de64b9257f8aac18f9468305e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_821ac22e9c2efd6b26749a7c8ebeb53591d6b4f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.facebook.stetho/stetho/1.4.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="32f45bd44a3e7efc235bbfed120029290f5d674a">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.facebook.stetho-stetho-1.4.2_86f7ea573a1abf9904c5263ecfcbdc3ece462ab4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-analyzer/1.3.1/325e7401a7ea16918eb39ba8baad8fd5561a55d3/leakcanary-analyzer-1.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="325e7401a7ea16918eb39ba8baad8fd5561a55d3">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/leakcanary-analyzer-1.3.1_5a44bf2794952babac1d7b9b1694051ed769e830.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/butterknife-7.0.1_d125ecfac4e067463353037f7e9088001f61c1ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_1a059d1f75806973995b311379435c26e1258bbe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_e024c0f2eeec6420436f2fea4e10f904924f8cad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/org/jetbrains/annotations/13.0/annotations-13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/annotations-13.0_21edf52381516d443969d7882e7626f8935be4b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.0.2/cfccdd18cdfbe7b4773d42c9f3512eeafbe5cbf9/rxjava-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cfccdd18cdfbe7b4773d42c9f3512eeafbe5cbf9">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/rxjava-2.0.2_a79cd7cf68f56c46595b34dc2e28aee6df268dcf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_49e67a5d7422644a19598665e855f99849918537.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.8/55a1aa1cdcfd06b9950ca856e2bc2790e105146a/dagger-2.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="55a1aa1cdcfd06b9950ca856e2bc2790e105146a">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/dagger-2.8_839a89f20424dd68ca67e4b69d22102ecbabd96b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_e024c0f2eeec6420436f2fea4e10f904924f8cad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/gson-2.7_7c5f8ddf955c88d776bd7a94c00e47a737f6ab27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.1_f709877633d0f1a6b19a9d7f2cb67fd9748fba98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_b0c035ede20191ea3fd944ff7412e3915cda0c2d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.5.0/4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83/okhttp-3.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/okhttp-3.5.0_f076d4783c237c200a1fc1ccc7ac1b61fd70475f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.haha/haha/1.3/d2c832f9d14a11c79f58a7ee2e10526a12152c72/haha-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d2c832f9d14a11c79f58a7ee2e10526a12152c72">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/haha-1.3_a3b5f8cbfed50d6bab50ec872a23849c77c28313.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.1/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/jsr305-2.0.1_c5e30c392d24fdd5944bf8c13247791076a66e30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_4f75a93e68ba14f19aef1ec6467368a3258280e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/io.reactivex.rxjava2/rxandroid/2.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/io.reactivex.rxjava2-rxandroid-2.0.1_23a6f4f28f7d83b47ac0a104cf29ecfcbeed6521.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_9e5a7ffdbf860bd0f96562d56cf4039ae3bbad63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/reactive-streams-1.0.0_1afd4c4fdad32e41c3b84c5bed34f3702df47893.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_d585ea29ddf03be46e29a147e532eedd887a6fc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-analyzer/1.3.1/325e7401a7ea16918eb39ba8baad8fd5561a55d3/leakcanary-analyzer-1.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="325e7401a7ea16918eb39ba8baad8fd5561a55d3">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/leakcanary-analyzer-1.3.1_5a44bf2794952babac1d7b9b1694051ed769e830.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_ee27e81f8b88001219554a074a3b4eb8aae2cc9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.facebook.stetho/stetho/1.4.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="32f45bd44a3e7efc235bbfed120029290f5d674a">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.facebook.stetho-stetho-1.4.2_86f7ea573a1abf9904c5263ecfcbdc3ece462ab4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/okio-1.11.0_1ec4787e399a0e81d2fc72f8caeb691ba315e259.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/org/jetbrains/annotations/13.0/annotations-13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/annotations-13.0_21edf52381516d443969d7882e7626f8935be4b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_69c0f558c75432bf127bae2006acdfc72f1433ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_1a059d1f75806973995b311379435c26e1258bbe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/butterknife-7.0.1_d125ecfac4e067463353037f7e9088001f61c1ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/domain/build/libs/domain.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1173838379c8cdef962665b9da89c18fa27bc7e8">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/domain_61ae942ec706634a29837876904e3e312c1203bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.0.2/cfccdd18cdfbe7b4773d42c9f3512eeafbe5cbf9/rxjava-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cfccdd18cdfbe7b4773d42c9f3512eeafbe5cbf9">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/rxjava-2.0.2_a79cd7cf68f56c46595b34dc2e28aee6df268dcf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.fernandocejas/arrow/1.0.0/653fc63eb69b44fda2e4c23de2ec2c7e6c028d34/arrow-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="653fc63eb69b44fda2e4c23de2ec2c7e6c028d34">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/arrow-1.0.0_ea2c06008c15bebbd65e0a38ef2724c2239667aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_68c9a51274ba6ff26a2dd12893da482416b8c96d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/javax.inject-1_2e35d2bd3bf2b757cfb36fbbbe2194b8b2b5d7c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-watcher/1.3.1/6904771474c058abfc5912c13d12b02754712165/leakcanary-watcher-1.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6904771474c058abfc5912c13d12b02754712165">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/leakcanary-watcher-1.3.1_8463c4a85d9c6e6bdb343ca9809817427efaaa6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/commons-cli-1.2_a4e85aab9e366926fc46ac842ab0a6ea9190d7de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_785c5ff9aa3ff0a1817483b34c524e32d5c54103.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_e9e5e6637a2879d5658506e118bd7e11ea1f3c2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.1_f709877633d0f1a6b19a9d7f2cb67fd9748fba98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9066b6d4e2536b49e3b58aa301fd925247032df0">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.squareup.leakcanary-leakcanary-android-1.3.1_cf0f21cc5f880f8150f73e30ceb65497917bddc5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.facebook.stetho/stetho-okhttp3/1.4.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="79c3d4a8ca3c04c5fd5a4a72d43a29fe6d3667b4">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.facebook.stetho-stetho-okhttp3-1.4.2_c98ebbed3761656510834a9a273fd2702a78e12e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/picasso-2.5.2_4b0a7bd227d87d33ab365e40750e5b1deaf1dfe3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_d9f3515810f1e712a9028712c578666b8c3529ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.5.0/4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83/okhttp-3.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/okhttp-3.5.0_f076d4783c237c200a1fc1ccc7ac1b61fd70475f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.1/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/jsr305-2.0.1_c5e30c392d24fdd5944bf8c13247791076a66e30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_5795e379d5edeb3ecce627dd6a7958688e8d0a8b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/io.reactivex.rxjava2/rxandroid/2.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/io.reactivex.rxjava2-rxandroid-2.0.1_23a6f4f28f7d83b47ac0a104cf29ecfcbeed6521.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/BitTracker/data/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="06bc68efe16577a06633b77650c967ed9fd4640c">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/BitTracker-data-unspecified_f9733c4e7fef81f73fe25fd790675ceecc074a93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_9e5a7ffdbf860bd0f96562d56cf4039ae3bbad63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_9b92eb85cc8193b5d6e0bf6808ab3c544ed7fee4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_69c0f558c75432bf127bae2006acdfc72f1433ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/domain/build/libs/domain.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f9bd18f2ad5ea797a7e7ade96b0b81532fb3b66d">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/domain_61ae942ec706634a29837876904e3e312c1203bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_ee27e81f8b88001219554a074a3b4eb8aae2cc9f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_5795e379d5edeb3ecce627dd6a7958688e8d0a8b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-watcher/1.3.1/6904771474c058abfc5912c13d12b02754712165/leakcanary-watcher-1.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6904771474c058abfc5912c13d12b02754712165">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/leakcanary-watcher-1.3.1_8463c4a85d9c6e6bdb343ca9809817427efaaa6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.5.0/94c11f915bfe1aeaa5ef6351ddfbe58bae1ea397/logging-interceptor-3.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94c11f915bfe1aeaa5ef6351ddfbe58bae1ea397">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/logging-interceptor-3.5.0_989c355c48b6f59f7e5cbd3573324263435be09b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/okio-1.11.0_1ec4787e399a0e81d2fc72f8caeb691ba315e259.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/reactive-streams-1.0.0_1afd4c4fdad32e41c3b84c5bed34f3702df47893.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/retrofit-2.1.0_b0464ff074089b64ab1d94c88f0ecf00a55f9fc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/javax.inject-1_2e35d2bd3bf2b757cfb36fbbbe2194b8b2b5d7c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_e9e5e6637a2879d5658506e118bd7e11ea1f3c2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/commons-cli-1.2_a4e85aab9e366926fc46ac842ab0a6ea9190d7de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_785c5ff9aa3ff0a1817483b34c524e32d5c54103.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/.gradle/caches/modules-2/files-2.1/com.fernandocejas/arrow/1.0.0/653fc63eb69b44fda2e4c23de2ec2c7e6c028d34/arrow-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="653fc63eb69b44fda2e4c23de2ec2c7e6c028d34">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/arrow-1.0.0_ea2c06008c15bebbd65e0a38ef2724c2239667aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/BitTracker/data/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="06bc68efe16577a06633b77650c967ed9fd4640c">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/BitTracker-data-unspecified_f9733c4e7fef81f73fe25fd790675ceecc074a93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.facebook.stetho/stetho-okhttp3/1.4.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="79c3d4a8ca3c04c5fd5a4a72d43a29fe6d3667b4">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.facebook.stetho-stetho-okhttp3-1.4.2_c98ebbed3761656510834a9a273fd2702a78e12e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_d9f3515810f1e712a9028712c578666b8c3529ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9066b6d4e2536b49e3b58aa301fd925247032df0">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.squareup.leakcanary-leakcanary-android-1.3.1_cf0f21cc5f880f8150f73e30ceb65497917bddc5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_8e23c57358e598cd2bb8362d888a3293406381eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_9b92eb85cc8193b5d6e0bf6808ab3c544ed7fee4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_39fe2e6d7a11e10de64b9257f8aac18f9468305e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_68c9a51274ba6ff26a2dd12893da482416b8c96d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_978da95dad53848c52b529945db5dd75c04e9911.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/adwait/Documents/BitTracker/presentation/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_821ac22e9c2efd6b26749a7c8ebeb53591d6b4f5.jar" />
+    </item>
+
+</items>
