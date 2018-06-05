@@ -6,11 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.parenting.attendance.R;
+import com.parenting.attendance.data.net.RestApi;
+import com.parenting.attendance.domain.interactor.LoginUseCase;
 import com.parenting.attendance.presentation.internal.di.HasComponent;
 import com.parenting.attendance.presentation.internal.di.components.DaggerLoginComponent;
 import com.parenting.attendance.presentation.internal.di.components.LoginComponent;
+import com.parenting.attendance.presentation.internal.di.modules.ActivityModule;
+import com.parenting.attendance.presentation.internal.di.modules.LoginModule;
 import com.parenting.attendance.presentation.model.Login;
 import com.parenting.attendance.presentation.presenter.LoginPresenter;
 import com.parenting.attendance.presentation.utils.Constant;
@@ -45,13 +50,17 @@ public class LoginActivity extends BaseActivity implements HasComponent<LoginCom
 
     @Override
     protected void initData(Bundle savedInstanceState) throws Exception {
-        this.<LoginActivity> getApplicationComponent().inject(this);
         loginComponent = DaggerLoginComponent.builder()
                 .applicationComponent(getApplicationComponent())
                 .activityModule(getActivityModule())
                 .build();
-        presenter.setLoginView(this);
+        loginComponent.present(this);
+    }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        presenter.setLoginView(this);
     }
 
     @Override
@@ -98,27 +107,27 @@ public class LoginActivity extends BaseActivity implements HasComponent<LoginCom
 
     @Override
     public void showLoading() {
-
+        Toast.makeText(this,"Loading",Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void hideLoading() {
-
+        Toast.makeText(this,"Done!",Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void showRetry() {
-
+        Toast.makeText(this,"Retry",Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void hideRetry() {
-
+        Toast.makeText(this,"Hide Retry",Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void showError(String message) {
-
+        Toast.makeText(this,message,Toast.LENGTH_LONG).show();
     }
 
     @Override

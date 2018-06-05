@@ -7,4 +7,5 @@ import com.parenting.attendance.domain.models.LoginResponse;
  */
 
 public interface LoginRepository extends ObservableRepository<LoginResponse> {
+
 }

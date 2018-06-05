@@ -26,6 +26,7 @@ import com.parenting.attendance.domain.repository.LoginRepository;
 import com.parenting.attendance.domain.repository.UserRepository;
 import com.parenting.attendance.domain.repository.VerificationRepository;
 import com.parenting.attendance.presentation.internal.di.modules.ApplicationModule;
+import com.parenting.attendance.presentation.navigation.Navigator;
 import com.parenting.attendance.presentation.view.activity.BaseActivity;
 
 import javax.inject.Singleton;
@@ -38,7 +39,7 @@ import dagger.Component;
 @Singleton // Constraints this component to one-per-application or unscoped bindings.
 @Component(modules = ApplicationModule.class)
 public interface ApplicationComponent {
-  void inject(BaseActivity baseActivity);
+//  void inject(BaseActivity baseActivity);
 
   //Exposed to sub-graphs.
   Context context();
@@ -48,6 +49,7 @@ public interface ApplicationComponent {
   CryptoRepository cryptoRepository();
   CryptoListRepository cryptoListRepository();
   VerificationRepository verificationRepository();
+  Navigator navigator();
   LoginRepository loginRepository();
   RestApi restApi();
 }

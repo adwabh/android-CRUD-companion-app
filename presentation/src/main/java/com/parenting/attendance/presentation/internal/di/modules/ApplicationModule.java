@@ -20,6 +20,7 @@ import android.content.Context;
 import com.parenting.attendance.data.cache.UserCache;
 import com.parenting.attendance.data.cache.UserCacheImpl;
 import com.parenting.attendance.data.entity.mapper.DomainModelConverter;
+import com.parenting.attendance.data.entity.mapper.UserEntityJsonMapper;
 import com.parenting.attendance.data.executor.JobExecutor;
 import com.parenting.attendance.data.net.RestApi;
 import com.parenting.attendance.data.net.RestApiImpl;
@@ -38,6 +39,7 @@ import com.parenting.attendance.domain.repository.VerificationRepository;
 import com.parenting.attendance.presentation.AndroidApplication;
 import com.parenting.attendance.presentation.UIThread;
 import com.parenting.attendance.presentation.mapper.PresentationModelConverter;
+import com.parenting.attendance.presentation.navigation.Navigator;
 
 import javax.inject.Singleton;
 
@@ -50,8 +52,6 @@ import dagger.Provides;
 @Module
 public class ApplicationModule {
   private final AndroidApplication application;
-  private DomainModelConverter converter;
-  private PresentationModelConverter presentationConverter;
 
   public ApplicationModule(AndroidApplication application) {
     this.application = application;
@@ -93,13 +93,16 @@ public class ApplicationModule {
   LoginRepository providesLoginRepository(LoginRepositoryImpl loginRepository){ return loginRepository; }
 
   @Provides @Singleton
-  RestApi providesRestApi(RestApiImpl restApi){
-    return restApi;
+  RestApi providesRestApi(){
+    return new RestApiImpl(application,new UserEntityJsonMapper());
   }
 
   @Provides @Singleton
-  DomainModelConverter providesDomainModelConverter(){ return converter; }
+  DomainModelConverter providesDomainModelConverter(){ return new DomainModelConverter(); }
 
   @Provides @Singleton
-  PresentationModelConverter providesPresentationModelConverter(){ return presentationConverter; }
+  PresentationModelConverter providesPresentationModelConverter(){ return new PresentationModelConverter(); }
+
+  @Provides @Singleton
+  Navigator providesNavigator(){ return new Navigator();}
 }
