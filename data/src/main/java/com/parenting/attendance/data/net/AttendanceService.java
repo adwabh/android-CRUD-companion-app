@@ -23,5 +23,5 @@ interface AttendanceService {
     Call<CryptoList> getCurrencyList(@QueryMap Map<String, String> params);
 
     @GET("/login")
-    Call<LoginEntity> getLogin(Map<String, String> params);
+    Call<LoginEntity> getLogin(@QueryMap Map<String, String> params);
 }

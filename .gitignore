@@ -16,4 +16,8 @@
 .idea/dictionaries/apple.xml
 gradlew
 gradlew.bat
-gradle/wrapper/gradle-wrapper.jar§
+gradle/wrapper/gradle-wrapper.jarï¿½
+domain/build/libs/domain.jar
+domain/build/classes/java/main/com/parenting/attendance/domain/interactor/LoginUseCase.class
+.idea/vcs.xml
+.idea/codeStyles/Project.xml
