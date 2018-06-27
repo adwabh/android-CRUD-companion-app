@@ -1,7 +1,7 @@
-Android-CleanArchitecture 
+CRUD - android companion app 
 =========================
 
-This is a modification of the boilerplate clean architectutre by Fernando Cajeias
+This is a sample app demonstrating clean architectutre with RxJava and Dagger 2, this app is intended as an android client to consume the API's demonstraited by https://github.com/adwabh/python_crud hosted on heroku 
 
 
 License
