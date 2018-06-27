@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.adwait.attendance.domain.interactor;
+package com.adwait.crud.domain.interactor;
 
 import io.reactivex.observers.DisposableObserver;
 

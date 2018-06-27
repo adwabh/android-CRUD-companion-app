@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/list_item_user" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_delete"
+        android:layout_height="@dimen/eighty_dp"
+        android:layout_width="match_parent"
+        android:background="@color/red">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/textView_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/twenty_five_dp"
+                android:textSize="@dimen/font_normal"
+                android:textColor="@color/white"
+                android:text="@string/action_delete"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/imageView_delete"
+                android:layout_height="@dimen/twenty_five_dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_action_delete"
+                android:layout_toRightOf="@+id/textView_delete"
+                android:layout_centerVertical="true" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

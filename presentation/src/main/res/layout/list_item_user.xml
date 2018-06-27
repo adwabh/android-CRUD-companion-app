@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardView_profile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/eighty_dp"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/two_dp"
+    android:foreground="?attr/selectableItemBackground"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_profile"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_width="@dimen/sixty_dp"
+            android:layout_marginRight="@dimen/eight_dp"
+            android:layout_marginLeft="@dimen/eight_dp"
+            android:src="@drawable/ic_account_circle_black_24dp"/>
+
+        <TableLayout
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView_name"
+                    android:layout_height="@dimen/thirty_dp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_xx_large"
+                    tools:text="Adwait Abhyankar"
+                    android:gravity="center_vertical" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/textView_email"
+                    android:layout_height="@dimen/twenty_five_dp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_normal"
+                    tools:text="adwabh@gmail.com"
+                    android:gravity="center_vertical" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

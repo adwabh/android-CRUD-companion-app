@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.adwait.attendance.domain.exception;
+package com.adwait.crud.domain.exception;
 
 /**
  * Interface to represent a wrapper around an {@link java.lang.Exception} to manage errors.

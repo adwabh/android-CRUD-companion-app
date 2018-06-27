@@ -24,7 +24,7 @@ allprojects {
     }
   }
   ext {
-    androidApplicationId = 'com.parenting.attendance'
+    androidApplicationId = 'com.adwait.crud.presentation'
     androidVersionCode = 1
     androidVersionName = "1.0"
     testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"

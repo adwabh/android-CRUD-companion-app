@@ -4,14 +4,9 @@ import com.adwait.crud.domain.Constant;
 import com.adwait.crud.domain.executor.PostExecutionThread;
 import com.adwait.crud.domain.executor.ThreadExecutor;
 import com.adwait.crud.domain.models.SampleUserListResponse;
-import com.adwait.crud.domain.repository.Cacheble;
-import com.adwait.crud.domain.repository.SampleUserListRepository;
 import com.adwait.crud.domain.repository.SingleSampleUserRepository;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

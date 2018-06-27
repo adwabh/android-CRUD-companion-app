@@ -84,6 +84,7 @@ dependencies {
     annotationProcessor presentationDependencies.daggerCompiler
     implementation presentationDependencies.dagger
     implementation presentationDependencies.butterKnife
+    annotationProcessor presentationDependencies.butterKnifeAnnotn
     implementation presentationDependencies.recyclerView
     implementation presentationDependencies.rxJava
     implementation presentationDependencies.rxAndroid
@@ -93,8 +94,7 @@ dependencies {
     implementation presentationDependencies.picasso
     implementation presentationDependencies.MPAndroidChart
     implementation presentationDependencies.CountryCodePicker
-    implementation presentationDependencies.firebaseAuth
-    implementation presentationDependencies.firebaseMessenging
+    implementation presentationDependencies.circleImageView
     provided presentationDependencies.javaxAnnotation
 
     androidTestCompile presentationTestDependencies.mockito
@@ -110,4 +110,3 @@ dependencies {
 repositories {
     google()
 }
-apply plugin: 'com.google.gms.google-services'

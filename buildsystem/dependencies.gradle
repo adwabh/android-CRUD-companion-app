@@ -13,7 +13,7 @@ ext {
 
   //Libraries
   daggerVersion = '2.8'
-  butterKnifeVersion = '7.0.1'
+  butterKnifeVersion = '8.8.1'
   recyclerViewVersion = '21.0.3'
   rxJavaVersion = '2.0.2'
   rxAndroidVersion = '2.0.1'
@@ -29,6 +29,7 @@ ext {
   picassoVersion = "2.5.2"
   MPAndroidCHartVersion = "v3.0.3"
   CCPVersion = "2.1.4"
+  circleImageViewVersion = "2.2.0"
 
   //firebase
   firebaseVersion =  "11.8.0"
@@ -52,6 +53,7 @@ ext {
       daggerCompiler    : "com.google.dagger:dagger-compiler:${daggerVersion}",
       dagger            : "com.google.dagger:dagger:${daggerVersion}",
       butterKnife       : "com.jakewharton:butterknife:${butterKnifeVersion}",
+      butterKnifeAnnotn : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
       recyclerView      : "com.android.support:recyclerview-v7:${recyclerViewVersion}",
       rxJava            : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
       rxAndroid         : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
@@ -63,7 +65,8 @@ ext {
       MPAndroidChart    : "com.github.PhilJay:MPAndroidChart:${MPAndroidCHartVersion}",
       CountryCodePicker : "com.hbb20:ccp:${CCPVersion}",
       firebaseAuth      : "com.google.firebase:firebase-auth:${firebaseVersion}",
-      firebaseMessenging: "com.google.firebase:firebase-messaging:${firebaseVersion}"
+      firebaseMessenging: "com.google.firebase:firebase-messaging:${firebaseVersion}",
+      circleImageView   : "de.hdodenhof:circleimageview:${circleImageViewVersion}"
   ]
 
   presentationTestDependencies = [
