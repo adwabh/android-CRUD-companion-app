@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewTreeObserver;
 
+/**
+ * https://stackoverflow.com/a/38185482/3530647
+ * */
 public abstract class RevealActivity extends BaseActivity {
 
     private View revealView;

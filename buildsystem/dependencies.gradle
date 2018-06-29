@@ -30,12 +30,14 @@ ext {
   MPAndroidCHartVersion = "v3.0.3"
   CCPVersion = "2.1.4"
   circleImageViewVersion = "2.2.0"
+  workManagerViewVersion = "1.0.0-alpha02"
+  lifecycleVersion = "1.1.1"
 
   //firebase
   firebaseVersion =  "11.8.0"
 
   //Support Library Version
-  supportLibrary = '25.0.1'
+  supportLibrary = '27.1.1'
 
   //Testing
   robolectricVersion = '3.1.1'
@@ -60,13 +62,17 @@ ext {
       javaxAnnotation   : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
       cardview          : "com.android.support:cardview-v7:${supportLibrary}",
       appcompat         : "com.android.support:appcompat-v7:${supportLibrary}",
+      appcompatv4       : "com.android.support:appcompat-v4:${supportLibrary}",
+      vectorDrawable    : "com.android.support:support-vector-drawable:${supportLibrary}",
       design            : "com.android.support:design:${supportLibrary}",
       picasso           : "com.squareup.picasso:picasso:${picassoVersion}",
       MPAndroidChart    : "com.github.PhilJay:MPAndroidChart:${MPAndroidCHartVersion}",
       CountryCodePicker : "com.hbb20:ccp:${CCPVersion}",
       firebaseAuth      : "com.google.firebase:firebase-auth:${firebaseVersion}",
       firebaseMessenging: "com.google.firebase:firebase-messaging:${firebaseVersion}",
-      circleImageView   : "de.hdodenhof:circleimageview:${circleImageViewVersion}"
+      circleImageView   : "de.hdodenhof:circleimageview:${circleImageViewVersion}",
+      workManager       : "android.arch.work:work-runtime:${workManagerViewVersion}",
+      lifecycle         : "android.arch.lifecycle:extensions:${lifecycleVersion}"
   ]
 
   presentationTestDependencies = [

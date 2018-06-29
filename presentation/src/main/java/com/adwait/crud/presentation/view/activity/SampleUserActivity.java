@@ -2,13 +2,16 @@ package com.adwait.crud.presentation.view.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Canvas;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.RelativeLayout;
@@ -27,12 +30,14 @@ import java.util.ArrayList;
 
 import javax.inject.Inject;
 
+import static android.support.v7.widget.helper.ItemTouchHelper.LEFT;
+
 public class SampleUserActivity extends BaseActivity implements HasComponent<SampleUserListComponent>, SwipeRefreshLayout.OnRefreshListener, SampleUserListView, View.OnClickListener {
 
     private static final int REQUEST_ADD_USER = 212;
     private RecyclerView recyclerView_user;
     private FloatingActionButton floatingActionButton_add;
-    private SwipeRefreshLayout swipeToRefreshLayout;
+//    private SwipeRefreshLayout swipeToRefreshLayout;
     private SampleUserListAdapter adapter;
 
     @Inject
@@ -53,7 +58,7 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
         relativeLayout_root = findViewById(R.id.relativeLayout_root);
         recyclerView_user = findViewById(R.id.recyclerView_user);
         floatingActionButton_add = findViewById(R.id.floatingActionButton_add);
-        swipeToRefreshLayout = findViewById(R.id.swipeToRefreshLayout);
+//        swipeToRefreshLayout = findViewById(R.id.swipeToRefreshLayout);
     }
 
     @Override
@@ -64,14 +69,16 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
                 .build();
         sampleUserListComponent.present(this);
         adapter = new SampleUserListAdapter();
-        layoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
+        layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerView_user.setLayoutManager(layoutManager);
         recyclerView_user.setAdapter(adapter);
+        recyclerView_user.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
+//        swipeToRefreshLayout.setEnabled(false);
     }
 
     @Override
     protected void initEvent() {
-        swipeToRefreshLayout.setOnRefreshListener(this);
+//        swipeToRefreshLayout.setOnRefreshListener(this);
         floatingActionButton_add.setOnClickListener(this);
         relativeLayout_root.getViewTreeObserver().addOnGlobalLayoutListener(
                 new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -91,6 +98,13 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
                     }
                 }
         );
+        adapter.setDeleteCallback(new SampleUserListAdapter.DeleteCallback() {
+            @Override
+            public void delete(int position) {
+
+            }
+        });
+        new ItemTouchHelper(new ListItemTouchHelper(0, LEFT, adapter)).attachToRecyclerView(recyclerView_user);
     }
 
     @Override
@@ -115,14 +129,14 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
         try {
             SampleUserList.SampleUserListData data;
             ArrayList<SampleUserList.SampleUser> list;
-            if (sampleUserList!=null) {
+            if (sampleUserList != null) {
                 data = sampleUserList.getData();
-                if (data!=null) {
+                if (data != null) {
                     list = data.getUser_list();
                     adapter.setUserList(list);
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -130,9 +144,9 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
     @Override
     public void showLoading() {
         try {
-            if (swipeToRefreshLayout!=null) {
-                swipeToRefreshLayout.setRefreshing(true);
-            }
+//            if (swipeToRefreshLayout != null) {
+//                swipeToRefreshLayout.setRefreshing(true);
+//            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -141,9 +155,9 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
     @Override
     public void hideLoading() {
         try {
-            if (swipeToRefreshLayout!=null) {
-                swipeToRefreshLayout.setRefreshing(false);
-            }
+//            if (swipeToRefreshLayout != null) {
+//                swipeToRefreshLayout.setRefreshing(false);
+//            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -161,7 +175,7 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
 
     @Override
     public void showError(String message) {
-        Snackbar.make(recyclerView_user,message,Snackbar.LENGTH_INDEFINITE).setAction("Ok", new View.OnClickListener() {
+        Snackbar.make(recyclerView_user, message, Snackbar.LENGTH_INDEFINITE).setAction("Ok", new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -178,8 +192,8 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(REQUEST_ADD_USER == requestCode){
-            if(RESULT_OK == resultCode){
+        if (REQUEST_ADD_USER == requestCode) {
+            if (RESULT_OK == resultCode) {
                 SampleUserList.SampleUser newUser = new SampleUserList.SampleUser();
                 newUser.setUsername(data.getStringExtra(Constant.ADD_USERNAME));
                 newUser.setEmail(data.getStringExtra(Constant.ADD_EMAIL));
@@ -190,10 +204,74 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
 
     @Override
     public void onClick(View view) {
-        switch(view.getId()){
+        switch (view.getId()) {
             case R.id.floatingActionButton_add:
-                AddSampleUserActivity.show(this, REQUEST_ADD_USER, fabX,fabY);
+                AddSampleUserActivity.show(this, REQUEST_ADD_USER, fabX, fabY);
                 break;
         }
+    }
+
+
+    public interface SwipeActionCallback {
+        void onCellSwiped(SampleUserListAdapter.SampleUserListHolder holder, int direction, int position);
+    }
+
+    public class ListItemTouchHelper extends ItemTouchHelper.SimpleCallback {
+
+        private SwipeActionCallback callback;
+
+        public ListItemTouchHelper(int dragDirs, int swipeDirs, SwipeActionCallback callback) {
+            super(dragDirs, swipeDirs);
+            this.callback = callback;
+        }
+
+        @Override
+        public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
+            return true;
+        }
+
+        @Override
+        public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
+            SampleUserListAdapter.SampleUserListHolder holder = ((SampleUserListAdapter.SampleUserListHolder) viewHolder);
+            if (callback != null) {
+                callback.onCellSwiped(holder, direction, viewHolder.getAdapterPosition());
+            }
+        }
+
+        @Override
+        public void onSelectedChanged(RecyclerView.ViewHolder viewHolder, int actionState) {
+            SampleUserListAdapter.SampleUserListHolder holder = null;
+            if (viewHolder != null) {
+                holder = ((SampleUserListAdapter.SampleUserListHolder) viewHolder);
+                getDefaultUIUtil().onSelected(holder.cardView_profile);
+            }
+        }
+
+        @Override
+        public void onChildDrawOver(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
+            SampleUserListAdapter.SampleUserListHolder holder;
+            if (viewHolder != null) {
+                holder = ((SampleUserListAdapter.SampleUserListHolder) viewHolder);
+                getDefaultUIUtil().onDrawOver(c,recyclerView,holder.cardView_profile,dX,dY,actionState,isCurrentlyActive);
+            }
+        }
+
+        @Override
+        public void clearView(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
+            if (viewHolder != null) {
+                SampleUserListAdapter.SampleUserListHolder holder = ((SampleUserListAdapter.SampleUserListHolder) viewHolder);
+                getDefaultUIUtil().clearView(holder.cardView_profile);
+            }
+        }
+
+        @Override
+        public void onChildDraw(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
+            if (viewHolder!=null) {
+                SampleUserListAdapter.SampleUserListHolder holder = ((SampleUserListAdapter.SampleUserListHolder) viewHolder);
+                getDefaultUIUtil().onDraw(c,recyclerView,holder.cardView_profile,dX,dY,actionState,isCurrentlyActive);
+            }
+        }
+
+
     }
 }

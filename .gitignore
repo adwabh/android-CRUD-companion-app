@@ -21,3 +21,4 @@ domain/build/libs/domain.jar
 domain/build/classes/java/main/com/parenting/attendance/domain/interactor/LoginUseCase.class
 .idea/vcs.xml
 .idea/codeStyles/Project.xml
+.idea/
