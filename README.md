@@ -1,7 +1,7 @@
 CRUD - android companion app 
 =========================
 
-This is a sample app demonstrating clean architectutre with RxJava and Dagger 2, this app is intended as an android client to consume the API's demonstraited by https://github.com/adwabh/python_crud hosted on heroku 
+This is a sample app demonstrating clean architecture with RxJava and Dagger 2, this app is intended as an Android client to consume the API's demonstrated by https://github.com/adwabh/python_crud hosted on Heroku
 
 
 License
