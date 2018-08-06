@@ -12,6 +12,7 @@ import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 import retrofit2.http.QueryMap;
 
 /**
@@ -26,7 +27,7 @@ interface CRUDService {
     Call<SampleUserListEntity> getSampleUserList(@QueryMap Map<String, String> params);
 
     @DELETE("/user")
-    Call<CommonEntity> deleteSampleUserFromApi(@QueryMap Map<String, String> params);
+    Call<CommonEntity> deleteSampleUserFromApi(@Path("id") String params);
 
     @POST("/user")
     @Headers("Content-Type: application/json")

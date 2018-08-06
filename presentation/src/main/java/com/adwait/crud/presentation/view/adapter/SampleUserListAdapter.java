@@ -1,6 +1,9 @@
 package com.adwait.crud.presentation.view.adapter;
 
 import android.graphics.Color;
+import android.os.Build;
+import android.os.Trace;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -31,15 +34,27 @@ public class SampleUserListAdapter extends RecyclerView.Adapter<SampleUserListHo
         userList = new ArrayList<>();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     @Override
     public SampleUserListHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_swipe_delete_user, parent, false);
+        View view = null;
+        Trace.beginSection("SampleUserListAdapter.onCreateViewHolder");
+        try {
+
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_swipe_delete_user, parent, false);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            Trace.endSection();
+        }
         return new SampleUserListHolder(view);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     @Override
     public void onBindViewHolder(SampleUserListHolder holder, int position) {
         try {
+            Trace.beginSection("SampleUserListAdapter.onBindViewHolder");
             SampleUser user = userList.get(position);
             if (user!=null) {
                 holder.cardView_profile.setTag(user);
@@ -48,6 +63,8 @@ public class SampleUserListAdapter extends RecyclerView.Adapter<SampleUserListHo
             }
         } catch (Exception e){
             e.printStackTrace();
+        }finally {
+            Trace.endSection();
         }
     }
 

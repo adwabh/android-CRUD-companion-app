@@ -88,6 +88,10 @@ public class RestApiImpl implements RestApi {
     }
 
 
+    @Override
+    public void deleteSampleUserSync(Map<String, String> stringStringMap) {
+
+    }
 
     @Override
     public Observable<SampleUserListEntity> getSampleUserList(Map<String, String> params) {
@@ -156,7 +160,8 @@ public class RestApiImpl implements RestApi {
     @Override
     public Observable<Boolean> deleteSampleUser(Map<String, String> params) throws IOException {
         boolean ret = false;
-        Call<CommonEntity> response = RestClient.getService(CRUDService.class).deleteSampleUserFromApi(params);
+        String id = params.get(PARAMS.ID);
+        Call<CommonEntity> response = RestClient.getService(CRUDService.class).deleteSampleUserFromApi(id);
         Response<CommonEntity> res =  response.execute();
         if(res.body()!=null){
             CommonEntity body = res.body();

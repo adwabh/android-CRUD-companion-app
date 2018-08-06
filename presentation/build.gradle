@@ -85,9 +85,9 @@ dependencies {
     implementation presentationDependencies.dagger
     implementation presentationDependencies.butterKnife
     annotationProcessor presentationDependencies.butterKnifeAnnotn
-    implementation presentationDependencies.recyclerView
     implementation presentationDependencies.rxJava
     implementation presentationDependencies.rxAndroid
+    implementation presentationDependencies.recyclerView
     implementation presentationDependencies.cardview
     implementation presentationDependencies.appcompat
     implementation presentationDependencies.design

@@ -4,7 +4,7 @@ package com.adwait.crud.data.entity;
  * Created by adwait on 21/03/18.
  */
 
-public abstract class CommonEntity {
+public class CommonEntity {
 
     protected String responseCode;
 

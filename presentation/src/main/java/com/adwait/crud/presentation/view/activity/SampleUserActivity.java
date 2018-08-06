@@ -23,12 +23,17 @@ import com.adwait.crud.presentation.internal.di.components.SampleUserListCompone
 import com.adwait.crud.presentation.model.SampleUserList;
 import com.adwait.crud.presentation.presenter.SampleUserListPresenter;
 import com.adwait.crud.presentation.utils.Constant;
+import com.adwait.crud.presentation.utils.backgroundwork.DeleteWorker;
 import com.adwait.crud.presentation.view.SampleUserListView;
 import com.adwait.crud.presentation.view.adapter.SampleUserListAdapter;
 
 import java.util.ArrayList;
 
 import javax.inject.Inject;
+
+import androidx.work.Data;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
 
 import static android.support.v7.widget.helper.ItemTouchHelper.LEFT;
 
@@ -37,7 +42,7 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
     private static final int REQUEST_ADD_USER = 212;
     private RecyclerView recyclerView_user;
     private FloatingActionButton floatingActionButton_add;
-//    private SwipeRefreshLayout swipeToRefreshLayout;
+    private SwipeRefreshLayout swipeToRefreshLayout;
     private SampleUserListAdapter adapter;
 
     @Inject
@@ -58,7 +63,7 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
         relativeLayout_root = findViewById(R.id.relativeLayout_root);
         recyclerView_user = findViewById(R.id.recyclerView_user);
         floatingActionButton_add = findViewById(R.id.floatingActionButton_add);
-//        swipeToRefreshLayout = findViewById(R.id.swipeToRefreshLayout);
+        swipeToRefreshLayout = findViewById(R.id.swipeToRefreshLayout);
     }
 
     @Override
@@ -73,12 +78,12 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
         recyclerView_user.setLayoutManager(layoutManager);
         recyclerView_user.setAdapter(adapter);
         recyclerView_user.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
-//        swipeToRefreshLayout.setEnabled(false);
+
     }
 
     @Override
     protected void initEvent() {
-//        swipeToRefreshLayout.setOnRefreshListener(this);
+        swipeToRefreshLayout.setOnRefreshListener(this);
         floatingActionButton_add.setOnClickListener(this);
         relativeLayout_root.getViewTreeObserver().addOnGlobalLayoutListener(
                 new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -101,10 +106,18 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
         adapter.setDeleteCallback(new SampleUserListAdapter.DeleteCallback() {
             @Override
             public void delete(int position) {
-
+                OneTimeWorkRequest deleteRequest = new OneTimeWorkRequest.Builder(DeleteWorker.class)
+                        .setInputData(createDeleteWorkerDataFor(position))
+                        .build();
+                WorkManager.getInstance().beginWith(deleteRequest).enqueue();
             }
         });
         new ItemTouchHelper(new ListItemTouchHelper(0, LEFT, adapter)).attachToRecyclerView(recyclerView_user);
+    }
+
+    private Data createDeleteWorkerDataFor(int position) {
+        Data deleteData = new Data.Builder().putInt(Constant.DELETE_ID,position).build();
+        return deleteData;
     }
 
     @Override
@@ -144,9 +157,9 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
     @Override
     public void showLoading() {
         try {
-//            if (swipeToRefreshLayout != null) {
-//                swipeToRefreshLayout.setRefreshing(true);
-//            }
+            if (swipeToRefreshLayout != null) {
+                swipeToRefreshLayout.setRefreshing(true);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -155,9 +168,9 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
     @Override
     public void hideLoading() {
         try {
-//            if (swipeToRefreshLayout != null) {
-//                swipeToRefreshLayout.setRefreshing(false);
-//            }
+            if (swipeToRefreshLayout != null) {
+                swipeToRefreshLayout.setRefreshing(false);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -187,7 +200,6 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
     public Context context() {
         return this;
     }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -271,7 +283,5 @@ public class SampleUserActivity extends BaseActivity implements HasComponent<Sam
                 getDefaultUIUtil().onDraw(c,recyclerView,holder.cardView_profile,dX,dY,actionState,isCurrentlyActive);
             }
         }
-
-
     }
 }
