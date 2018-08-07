@@ -13,13 +13,14 @@ public class DeleteWorker extends Worker {
     private RestApi restApi;
 
     public DeleteWorker() {
-        restApi = new RestApiImpl(getApplicationContext());
+
     }
 
     @NonNull
     @Override
     public WorkerResult doWork() {
         try {
+            restApi = new RestApiImpl(getApplicationContext());
             int position = getInputData().getInt(Constant.DELETE_ID,-1);
             if (position != -1) {
                 restApi.deleteSampleUserSync(RestApi.ParamsBuilder.buildDeleteWorkerParams(position));

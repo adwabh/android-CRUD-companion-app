@@ -26,7 +26,7 @@ interface CRUDService {
     @GET("/user")
     Call<SampleUserListEntity> getSampleUserList(@QueryMap Map<String, String> params);
 
-    @DELETE("/user")
+    @DELETE("/user/{id}")
     Call<CommonEntity> deleteSampleUserFromApi(@Path("id") String params);
 
     @POST("/user")

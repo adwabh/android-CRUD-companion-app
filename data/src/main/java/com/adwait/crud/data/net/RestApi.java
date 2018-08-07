@@ -30,7 +30,7 @@ import io.reactivex.Observable;
  */
 public interface RestApi {
 
-    void deleteSampleUserSync(Map<String, String> stringStringMap);
+    void deleteSampleUserSync(Map<String, String> stringStringMap) throws IOException;
 
     public class ParamsBuilder{
 
