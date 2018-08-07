@@ -18,6 +18,8 @@ package com.adwait.crud.data.net;
 import com.adwait.crud.data.entity.SampleUserListEntity;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -28,6 +30,17 @@ import io.reactivex.Observable;
  */
 public interface RestApi {
 
+    void deleteSampleUserSync(Map<String, String> stringStringMap) throws IOException;
+
+    public class ParamsBuilder{
+
+        public static Map<String, String> buildDeleteWorkerParams(int position) {
+            Map<String, String> ret = new LinkedHashMap<>();
+            ret.put(PARAMS.ID, String.valueOf(position));
+            return ret;
+        }
+    }
+
     public interface PARAMS {
         public static final String FSYM = "fsym";
         public static final String TSYM = "tsyms";
@@ -36,6 +49,7 @@ public interface RestApi {
         String PASSWORD = "pwd";
         String USERNAME = "username";
         String EMAIL = "email";
+        String ID = "id";
     }
 
     //  String API_BASE_URL = "https://raw.githubusercontent.com/android10/Sample-Data/master/Android-CleanArchitecture/";

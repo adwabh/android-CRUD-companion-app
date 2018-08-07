@@ -22,6 +22,7 @@ import android.text.TextUtils;
 import com.adwait.crud.data.entity.CommonEntity;
 import com.adwait.crud.data.entity.SampleUserListEntity;
 import com.adwait.crud.data.exception.NetworkConnectionException;
+import com.adwait.crud.domain.Constant;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -88,6 +89,12 @@ public class RestApiImpl implements RestApi {
     }
 
 
+    @Override
+    public void deleteSampleUserSync(Map<String, String> params) throws IOException {
+        String id = params.get(PARAMS.ID);
+        Call<CommonEntity> response = RestClient.getService(CRUDService.class).deleteSampleUserFromApi(id);
+        Response<CommonEntity> res =  response.execute();
+    }
 
     @Override
     public Observable<SampleUserListEntity> getSampleUserList(Map<String, String> params) {
@@ -156,7 +163,8 @@ public class RestApiImpl implements RestApi {
     @Override
     public Observable<Boolean> deleteSampleUser(Map<String, String> params) throws IOException {
         boolean ret = false;
-        Call<CommonEntity> response = RestClient.getService(CRUDService.class).deleteSampleUserFromApi(params);
+        String id = params.get(PARAMS.ID);
+        Call<CommonEntity> response = RestClient.getService(CRUDService.class).deleteSampleUserFromApi(id);
         Response<CommonEntity> res =  response.execute();
         if(res.body()!=null){
             CommonEntity body = res.body();

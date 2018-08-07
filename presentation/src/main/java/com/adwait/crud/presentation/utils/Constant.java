@@ -14,4 +14,5 @@ public interface Constant {
 
     String ADD_USERNAME = "ADD_USERNAME";
     String ADD_EMAIL = "ADD_EMAIL";
+    String DELETE_ID = "DELETE_ID";
 }

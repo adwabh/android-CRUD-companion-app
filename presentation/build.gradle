@@ -78,16 +78,16 @@ dependencies {
     implementation project(':domain')
     implementation project(':data')
 
-    implementation 'com.android.support:design:27.0.2'
+    implementation presentationDependencies.design
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'com.android.support:support-vector-drawable:27.0.2'
+    implementation presentationDependencies.vectorDrawable
     annotationProcessor presentationDependencies.daggerCompiler
     implementation presentationDependencies.dagger
     implementation presentationDependencies.butterKnife
     annotationProcessor presentationDependencies.butterKnifeAnnotn
-    implementation presentationDependencies.recyclerView
     implementation presentationDependencies.rxJava
     implementation presentationDependencies.rxAndroid
+    implementation presentationDependencies.recyclerView
     implementation presentationDependencies.cardview
     implementation presentationDependencies.appcompat
     implementation presentationDependencies.design
@@ -95,6 +95,8 @@ dependencies {
     implementation presentationDependencies.MPAndroidChart
     implementation presentationDependencies.CountryCodePicker
     implementation presentationDependencies.circleImageView
+    implementation presentationDependencies.lifecycle
+    implementation presentationDependencies.workManager
     provided presentationDependencies.javaxAnnotation
 
     androidTestCompile presentationTestDependencies.mockito
